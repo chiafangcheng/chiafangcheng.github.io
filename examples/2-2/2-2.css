@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Oswald&display=swap');
+h1{
+	font-family: Oswald, sans-serif;
+}/*假如google掛了 第二個字形是備用的 會去找用這個網頁的人的電腦裡有的sans serif字型*/
+p{
+	font-family: Alegreya, serif;
+}

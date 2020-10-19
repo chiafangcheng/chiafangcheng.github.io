@@ -1,0 +1,11 @@
+/*This is my first css file. property is the style or appearance of the website. body原來是selector
+template is 
+selector {
+	property: value;
+	}*/
+body {
+	background-color: pink;
+}
+div {
+	background-color: orange;
+}
