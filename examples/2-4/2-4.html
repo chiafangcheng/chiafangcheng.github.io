@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en" style ="font-size: 2.4vh;">
+	<head>
+		<title>Example 2-4</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body style="font-size: 1.5rem">
+		<!-- 應設定為內文大小
+			rem = relative to the font of the root(refer to the font size of html)-->
+			This is inside the body element.
+		<p style = "font-size: 50%;">
+			This is for %.<!-- % = relative to the font of the parent(refer to the font size of body)
+			if the font size of body is not determined, then it woud inherite what's set up for html
+			here: (2.4*1.5)/2vh-->
+		</p>
+		<p style = "font-size: 0.5rem;">
+			This is for rem.
+			<!--2.4*0.5vh -->
+		</p>
+		<p style = "font-size: 2cm;">
+			This is for cm.
+		</p>
+		<p style = "font-size: 10mm;">
+			This is for mm.
+		</p>
+		<p style = "font-size: 1in;">
+			This is for in.
+		</p>
+		<p style = "font-size: 48px;">
+			This is for px.
+		</p><!-- 這個大小是設定這個字體的高度 不是寬度 是絕對單位
+				最常使用的是pixel 因為可以依照解析度或是螢幕大小來看
+				vh = Viewport Height (The height of what you see on the screen)-->
+		<p style = "font-size: 1.6vh;">
+			This is for vh. 
+		</p>
+		<p style="font-size: 1.6vw;">
+			This is for vw.
+		</p>
+		
+	</body>
+</html>

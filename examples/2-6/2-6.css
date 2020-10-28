@@ -1,0 +1,18 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	color: white;
+	/*padding: 5px;*/
+	/*padding-bottom: 5px;*/
+	/*padding:3px 10px 20px 0; /*上右下左 順時鐘*/
+	/*padding: 10px 0; /*代表上下內縮 沒有左右*/
+	padding: 5px 0 10px; /*代表左右都一樣 因為最後一個數字沒有
+							如果是三個數字 就是上 左右 下
+							兩個數字的話 就是上下和左右*/
+	margin: 5px 0; /*和前面後面都相隔5px 和左右沒有間隔
+					margin collapse 會使得重複多餘的margin就會自動去除*/
+}

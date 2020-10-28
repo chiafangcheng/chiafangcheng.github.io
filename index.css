@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+*{
+	box-sizing: border-box;
+}
+section{
+	background-color: pink;
+	padding:10px 10px;
+	margin:0px 5px ;
+}
+h1{
+	font-family: Archivo Black;
+	font-size:4.8vh;
+	color:#eb3434;
+}
