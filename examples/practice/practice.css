@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font:2.4vh/3.6vh serif;
+}
+
+div#container{
+	height: 100vh;
+	width: 90%; 
+	margin-left: 10%;
+	padding: 5px 5px; 
+	background-image: url("back2.png");
+	background-position: left bottom;
+	color: white;
+	font-size: 40px;
+	font-family: Racing Sans One;
+}
+
+nav{
+	position: fixed;
+	right: 90%;
+	padding: 10px 15px;
+	margin:0;
+	left: 0;
+	font-family: sans-serif;
+	font-size: 18px;
+	background-color: #ffdf6d;
+	color: #e08104;
+	height: 100vh;
+	line-height: 40px;
+
+} 
+
+/*.trian_btn{
+	display:inline-block;
+}
+.trian_btn: hover, .trian_btn:focus{
+
+}*/
+section{
+	height: 100vh;
+	width: 90%; 
+	margin-left: 10%;
+	padding: 15px 5px; 
+}

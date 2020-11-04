@@ -43,6 +43,13 @@ nav{
 	line-height: 40px;
 
 } 
+
+/*.trian_btn{
+	display:inline-block;
+}
+.trian_btn: hover, .trian_btn:focus{
+
+}*/
 section{
 	height: 100vh;
 	width: 90%; 
@@ -57,6 +64,17 @@ section{
 	margin-top: -25px;
 
 }
+
+
+
+/*.intro{
+    float:left;
+    width:100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}*/
+
 .intro2{
     float:left;
     width:100%;
@@ -88,3 +106,10 @@ p{
 	text-indent: 36px;
 	color: #66551c;
 }
+
+/*.btn{
+	border-style: solid;
+	border-width: 3px;
+	background-color: #D6D2C4;
+	width: 30px; height: 40px;
+}*/

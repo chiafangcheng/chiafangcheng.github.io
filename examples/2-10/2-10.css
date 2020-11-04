@@ -1,0 +1,22 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	text-align: center;/*讓裡面的元件置中 如果設定inline-block 也可以置中*/
+}
+
+div{
+	display: inline-block; /*this is default: block 代表會分上下塊*/
+	width: 50px;
+	height: 50px;
+}
+
+a{
+	display:inline-block;/*但是置中後是文字水平置中*/
+	background-color: orange;
+	width: 50px;
+	height: 50px;
+}

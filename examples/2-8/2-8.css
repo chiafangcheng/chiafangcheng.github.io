@@ -1,0 +1,30 @@
+*{
+	margin:0 ;
+	padding:0 ;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	background-color: #E8CEBF;
+	overflow-x: hidden; /*限制網站的橫向滾動*/
+	overflow-y: auto;
+	font:2.4vh/3.6vh serif;/*字型高度/1.5倍的行高*/
+}
+
+article{
+	padding: 5px 10px;
+}
+
+section{
+	margin: 20px 0;
+}
+
+a{
+	color: #266150;
+	text-decoration: none;/*代表取消原本會有底線的超連結*/
+	font-weight: bold;
+	font-family: sans-serif;
+}
+/*先思考整體網頁的內容呈現 再來用css來做design*/
