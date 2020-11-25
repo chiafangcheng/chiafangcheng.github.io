@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	
+}
+
+
+ul {
+	height: 45px;
+	display: flex;
+	justify-content: space-between;
+	line-height: 47px;
+	overflow: hidden;
+
+	
+}
+
+li{
+	overflow: hidden;
+	font-size: 3vh;
+	font-family: Bebas Neue, sans-serif;
+	background-color: white; 
+	padding: 0 100px;
+	transition: background-color .4s ease-in-out;
+	cursor: pointer;
+}
+
+li:hover {
+	background-color: rgba(179, 168, 168, .7);
+}
+
+a{
+	text-decoration: none;
+	overflow: hidden;
+}
+
+
+
+ul.dropdown-content{
+	position: absolute;
+	right:150px ;
+	top:45px;
+	display: flex;
+	flex-direction: column;
+	z-index: 99;
+	height: 150px;
+
+}
+
+ul.dropdown-content{
+	display: none;
+}
+
+li.dropdown-menu:hover >ul.dropdown-content{
+	display: block;
+	
+}
+
+
+.banner{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(110deg,#f78888 50%, transparent 50% ) center center/100% 100%, url("bg.jpg") right center / auto 100%;
+
+}
+
+
+.container{
+	height: 100%;
+	margin: auto;
+
+}
+
+.banner-txt {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 50px;
+	font-family: Thasadith, sans-serif;
+	
+}
+
+.banner-txt img{
+	border-bottom: 3px solid #25285c;
+	width: 555px;
+	height: 115px;
+	padding-bottom: .3rem;
+	margin-bottom: .3rem;
+}
+
+
+.banner-txt small{
+	display: block;
+	font-size: 40px;
+	font-weight: 700;
+
+}
+
+.banner-txt h2{
+	font-size: 30px;
+	padding-top: 20px;
+}
+
+.banner-txt p{
+	font-size: 20px;
+}
+
+
+
+
+

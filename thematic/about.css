@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+
+	
+	
+}
+
+body{
+	overflow-y: scroll;
+	background-color: #ccc;
+}
+
+
+
+ul {
+	height: 45px;
+	display: flex;
+	justify-content:space-between;
+	line-height: 47px;
+	overflow: hidden;
+
+	
+}
+
+li{
+	overflow: hidden;
+	font-size: 3vh;
+	font-family: Bebas Neue, sans-serif;
+	background-color: white; 
+	padding: 0 100px;
+	transition: background-color .4s ease-in-out;
+	cursor: pointer;
+}
+
+li:hover {
+	background-color: rgba(179, 168, 168, .7);
+}
+
+a{
+	text-decoration: none;
+	overflow: hidden;
+}
+
+ul.dropdown-content{
+	position: absolute;
+	right:150px ;
+	top:45px;
+	display: flex;
+	flex-direction: column;
+	z-index: 99;
+	height: 150px;
+
+}
+
+ul.dropdown-content{
+	display: none;
+}
+
+li.dropdown-menu:hover >ul.dropdown-content{
+	display: block;
+	
+}
+
+h1{
+	margin-top: 50px;
+	margin-bottom: 25px;
+	margin-left: 50px;
+}
+
+section{
+	margin-left: 50px;
+	margin-right: 50px;
+}

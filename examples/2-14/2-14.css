@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+
+div{
+	width: 100px;
+	height: 100px;
+
+}
+
+div:first-child {
+	background-color: orange;
+}
+
+div:last-child {
+	background-color: green;
+}
+
+div:nth-of-type(3) {
+	background-color: brown;
+}
+
+div:not(:first-child) {
+	background-color: orange;
+}
+
+article>div:not(:first-child) {
+	background-color: orange;
+}
+
+
+/*":"" indicates psuedo-class
+這是把所有div收集起來 然後看看誰是上一層(這裡是body)的第一個小孩 故用body: first-child在這裡不會有反應
+中間不能有空格！！
+盡量不要用id or class 這是老師考核標準*/
+
+
+
+

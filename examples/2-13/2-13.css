@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	font-size: 2.4vh;
+	font-family: serif;
+	line-height: 3.6vh;
+	padding: 0 2vw;
+}
+
+h1{
+	font-size: 4.8vh;
+	line-height: 7.2vh;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 3.6vh;
+	line-height: 5.4vh;
+	font-style: italic;
+}
+
+section{
+	margin: 1vh 0; /*上下間隔1vh*/
+}
+
+p{
+	margin: 0.5vh 0;
+}
+
+p::first-letter {
+	font-size: 2.8vh;
+	font-weight: bold;
+}
+/*psuedo element是"::"*/
+
+
+
+/*h1 + p{
+	font-size: 3.2vh;
+	line-height: 4.8vh;
+	font-family: sans-serif;
+	}/*針對在h1旁邊的p去做style的調整 兩者是siblings*/
+
+
+/*p#summary{
+	font-size: 3.2vh;
+	line-height: 4.8vh;
+	font-family: sans-serif;
+}*/
+
+/*section > p{
+	font-family: sans-serif;
+}
+/*這是在section下層的p 兩者是parent-children*/
+
+/*article > p{
+	font-size: 3.2vh;
+	line-height: 4.8vh;
+	font-family: sans-serif;
+}*/
+
+/*article p{
+	font-family: sans-serif;
+}
+/*1.空格後的這個p不一定是article的immediate child 所有p都適用
+2.這個表示法和 h1+p 兩者的specificity是相同的 故兩者同時出現的話 撰寫順序較後面的會覆蓋上者
+3.+號代表兩者是adjacent*/
+
+h2 ~ p{
+	font-family: sans-serif;
+}
+/*should not be adjacent to h2, all p as siblings with h2 will be applied*/

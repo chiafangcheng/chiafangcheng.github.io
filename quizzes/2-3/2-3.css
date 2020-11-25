@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+
+section{
+	height: 150px;
+	background-color: grey;
+}
+
+section>div{
+	height: 20px;
+	background-color: red;
+}
+
+
+
+/*section:not(:first-child) > div:nth-of-type(2):hover {
+	background-color:green;
+}*/
+/*上者是滑到二三個section的第二個div才會變色*/
+
+section:not(:first-child):hover > div:nth-of-type(2) {
+	background-color:green;
+}
+/*這個是在滑鼠滑到非不是第一個小孩的任何一點都會變綠色*/
+
+
