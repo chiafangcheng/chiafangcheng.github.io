@@ -40,6 +40,10 @@ a{
 	color: #3e1fa3;
 }
 
+a:active {
+	color: red;
+}
+
 
 
 ul.dropdown-content{
