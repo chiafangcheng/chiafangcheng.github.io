@@ -74,6 +74,7 @@ body{
 .wrap{
 	position: relative;
 	margin:50px 50px;
+	font-family: Thasadith, serif;
 	
 	
 }
@@ -131,6 +132,7 @@ body{
 	line-height: 45px;
 	margin:auto;
 	margin-top: 20px;
+	font-weight: 900;
 
 }
 
@@ -146,4 +148,7 @@ a.bu_href{
 	transition: background-color .3s ease-in-out;
 }
 
-
+h2{
+	font-family: Bebas Neue, sans-serif;
+	letter-spacing: 5px;
+}
