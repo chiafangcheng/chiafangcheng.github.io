@@ -8,5 +8,8 @@ window.onload = function() {
 	idEm.innerHTML = 'No 6 Changed!';
 
 	idEm.style.color = 'red';
+	idEm.style.backgroundColor = 'black';
+	//font-size - fontSize, text-align = textAlign
+	idEm.style.marginLeft = '5px';//這些都會被當成inline style 代表會有最優先的程度
 
 };

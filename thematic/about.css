@@ -12,23 +12,32 @@
 }
 
 body{
-	overflow-y: scroll;
-	background-color: #ccc;
+	
+	/*background-color: #f0dddf;*/
+	background:rgba(255, 150, 150,.3);
+}
+
+
+nav{
+	background-color: white; /*flex-gap的問題尚未解決 但我還沒查到作法 故先設白色*/
 }
 
 
 
 ul {
+	
 	height: 45px;
 	display: flex;
 	justify-content:space-between;
 	line-height: 47px;
 	overflow: hidden;
-
-	
+		
 }
 
+
+
 li{
+
 	overflow: hidden;
 	font-size: 3vh;
 	font-family: Bebas Neue, sans-serif;
@@ -36,6 +45,7 @@ li{
 	padding: 0 100px;
 	transition: background-color .4s ease-in-out;
 	cursor: pointer;
+
 }
 
 li:hover {
@@ -55,12 +65,12 @@ a:active {
 
 ul.dropdown-content{
 	position: absolute;
-	right:150px ;
+	right:155px ;
 	top:45px;
 	display: flex;
 	flex-direction: column;
 	z-index: 99;
-	height: 150px;
+	height: 140px;
 
 }
 
@@ -73,13 +83,105 @@ li.dropdown-menu:hover >ul.dropdown-content{
 	
 }
 
+
+/*回去重看一下code*/
+
+.container{
+	width: 100%;
+	height: calc(100vh - 45px);
+	margin:0 auto;
+	display: flex;
+	background-image: linear-gradient(125deg, #f53636,#f78888, #f7c1c1);
+	
+	/*#070c2c, #303f9f, #4f62da h1 color#303f9f*/
+	padding: 20px;
+	justify-content: flex-end;
+	position: relative;
+	overflow: hidden;
+	font-size: 2.8vh;
+}
+
+h1{
+	width: 100%;
+	font-size: 150px;
+	position: absolute;
+	left: 0;
+	top:-25px; 
+	line-height: 1;
+	color:#f78888;
+	font-family: Bebas Neue;
+	letter-spacing: 10px;
+}
+
+.content{
+	width: 700px;
+	column-count: 2;
+	column-gap: 5%;
+	padding: 20px;
+	position: relative;
+	z-index: 3;
+	
+}
+
+p{
+	line-height: 1.5;
+	margin-bottom: 5%;
+	color: white;
+	z-index: 5;
+	font-family: Thasadith, sans-serif;
+}
+
+p > a{
+	font-weight: bold;
+	font-style: italic;
+	cursor: pointer;
+	text-decoration: underline;
+	color: white;
+
+}
+
+.overlay{
+	width:705px;
+	height:480px ;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background-color: rgba(189, 47, 47,.2);
+	z-index: -1;
+}
+
+
+
+
+
+
+/*
 h1{
 	margin-top: 50px;
 	margin-bottom: 25px;
-	margin-left: 50px;
+	margin-left: 100px;
+	color: #3229a6;
+}
+*/
+
+/*
+hr{
+	display: block;
+	height:2px;
+	border:0;
+	background-color: #de263e;
+	margin-bottom: 2rem;
+	margin-right: 100px;
+	margin-left: 100px;
+	padding:0;
+
 }
 
+
+
 section{
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+	color: #4f4f59;
 }
+*/
