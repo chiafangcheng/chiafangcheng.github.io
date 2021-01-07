@@ -20,7 +20,14 @@ function changePosition(){
 	var imgs = document.getElementsByTagName('img');
 	for (var i = 0; i < imgs.length; i++){
 		var img = imgs[i];
-		if ()
+		if (img.id === buttonId){
+			img.style.top = '-20px';
+			img.style.opacity='1'; //for reset
+		}
+		else{
+			img.style.opacity = '0.5';
+			img.style.top = '0px'; // for reset
+		}
 	}
 };
 

@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<title>Practice3</title>
+		<script src="practice3.js"></script>
+		<link rel="stylesheet" href="practice3.css">
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+
+		<a name="Home"></a>
+		<div style="background-image: url(back8.jpg);height: 100vh;background-repeat: no-repeat; background-position: center;background-size:cover;filter: brightness(.7);"></div>
+		<nav>
+			<div class = "banner">
+			<a href="https://chiafangcheng.github.io"><img src="mark6.png" style="width: 40px;height: 25px;margin-left: 20%;margin-top: 5%;"></a>
+			</div>
+			<div><a href="#Home" style="text-decoration: none; color: rgba(255,250,240);">Home</a></div>
+			<div><a href="#AboutMe" style="text-decoration: none; color: rgba(255,250,240);">About Me</a></div>
+			<div><a href="https://chiafangcheng.github.io/thematic/" style="text-decoration: none; color: rgba(255,250,240);">Theme</a></div>
+			<div><a href="#ContactMe" style="text-decoration: none; color: rgba(255,250,240);">Contact Me</a></div>
+
+		</nav>
+		<div class="FooterForIndex"><!--powered by: ＡＮＮＡ　ＣＨＥＮＧ 這個給真的bottom footer--></div>
+
+	</body> <!--如果要加上javascript或是jQuery的話 可以加上1. index圖片輪播的效果 2.載入時頭貼有動畫效果 3.lightbox視窗彈出時有彈跳效果 4.頁面跳轉時是滑動的 因為個人網站我想做一頁式的 5. 下滑時nav pannel可以變底色(看這篇 https://weiupward.com/2020/04/18/rwd-menu-%E6%BB%BE%E5%8B%95%EF%BC%8B%E9%80%8F%E6%98%8E%E8%AE%8A%E8%89%B2%E6%95%88%E6%9E%9C%EF%BC%8C%E7%B6%B2%E7%AB%99%E8%A6%96%E8%A6%BA%E6%95%88%E6%9E%9C%E6%8F%90%E5%8D%87/)-->
+		
+		<div id="container">
+			<!--<div style="display: flex;border-style: solid;border-width:5px;border-color: #D6D2C4; padding: 10px 10px;align-items: center;justify-content: center;">--><!--這樣是整個element佔了整個div container 且文字在中間-->
+			<div><img src="selfie.png" style="width: 184px;height: 184px;margin: 0 auto;"></div>
+			<div style=" padding: 20px 210px;color: white;font-size: 9.6vh;">
+				ANNA CHENG
+			</div>
+			<div style="padding-bottom: 30px;color: white;font-size: 3.3vh;font-weight: lighter;">
+				Hello! I'm Anna. Welcome to my space !
+			</div>
+			<!--<div style="background:linear-gradient(#735e24,#c4ac66,#735e24) ;width: 100px;height: 35px; margin: 0 auto;color: white;padding-top: 7px;font-size: 15px;"><a href="#AboutMe">SEE MORE</a></div>-->
+			<a href="#AboutMe" style="text-decoration: none;color: white;font-family: Poiret One;font-size: 3vh;"><div class="btn">SEE MORE</div></a>
+			
+		</div><!--put the photo and the words-->
+
+	<body style="background-color: rgba(137, 196, 244, 0.4);">
+		<!--#ccc7bc;#ccc3ad#D2B48C #a69579<div style="display:inline-block;background-color: blue;width: 30%;height: 500px;margin-left: 7vw;"></div>
+		<div style="display: inline-block;background-color: red;width: 25%;height: 500px;"></div>
+		<div style="display: inline-block;background-color: green;width: 30%;height: 500px;"></div>-->
+
+
+
+<!--這個是下移出一個grid的試驗 for aboutme->-->
+<!--
+		<div style="width: 100vw;height: 100px;"></div>
+
+
+		<div class="column" onclick="openTab('b1');"style = "background-color: green;">Box1<br>photo</div>
+		<div class="column" style = "background-color: blue; cursor: auto;">ABOUT<br>ME</div><!--onclick="openTab('b2');"被我拿掉了-->
+<!--		<div class="column" onclick="openTab('b3');"style = "background-color: red;">Box3<br>photo</div>
+
+		<!--expand the blocks hidden by default-->
+<!--		<div id="b1" class="containerTab" style="display: none;background-color: green;">
+		<span onclick="this.parentElement.style.display = 'none'" class="closebtn">x</span>
+		<h2>Box1</h2>
+		<p>tfaksgbfioeayfo eutfakoswbvah ihoai;hgfha</p>
+		</div>
+
+
+		<div id="b2" class="containerTab" style="display: none;background-color: blue;">
+		<span onclick="this.parentElement.style.display = 'none'" class="closebtn">x</span>
+		<h2>Box2</h2>
+		<p>tfaksgbfioeayfo eutfakoswbvah ihoai;hgfha</p>
+		</div>
+
+		
+		<div id="b3" class="containerTab" style="display: none;background-color: red;">
+		<span onclick="this.parentElement.style.display = 'none'" class="closebtn">x</span>
+		<h2>Box3</h2>
+		<p>tfaksgbfioeayfo eutfakoswbvah ihoai;hgfha</p>
+		</div>
+
+-->		
+		<section>
+			<a name="AboutMe"></a>
+			<h1 style="text-align: center;width: 250px;height: 55px;margin: 0 390px; line-height:80vh;font-size:110px;color: #5c6e91;font-family: Poiret One, sans-serif;font-weight: bolder;">ABOUT</h1>
+			<h1 style="text-align: center;width: 250px;height: 55px;margin: 0 610px;line-height:120vh;font-size:110px;color: #5c6e91;font-family: Poiret One, sans-serif;font-weight: bolder;" >ME</h1>
+		</section>
+
+<!--這邊是lightbox效果的試驗 for aboutme 470px 700px -->
+
+		<a href="#engBio"><div class = "bioContainer" style="background-image: url(engBio_box.jpg);float:left;margin-left: 8vw;background-size: 785px 450px;background-repeat: no-repeat;background-position: center;"><span style="font-size:70px;color: rgba(255,255,255,.7);line-height: 53px;font-weight: bolder;font-family: Poiret One, sans-serif;">Who<br>Am<br>I</span></div></a>
+		
+		<a href="#chiBio" ><div class="bioContainer" style="background-image: url(chiBio_box.jpg);float:right;margin-right: 8vw;background-size: 450px 800px;background-repeat: no-repeat;background-position: 75% 25%;"><span style="font-size: 70px;color: rgba(255,255,255,.7);;padding-top:365px;float: right;font-weight: bold;">我 是 誰</span></div></a>
+ 
+ 		<div class="lightbox" id="engBio" style="padding-top: 40vh;">
+ 			
+ 			<a href="#AboutMe" class="close"></a>
+ 				<div style="width: 100vw; height:52px ; background-color: grey; position: fixed;top: 0;left:0;z-index: -1;"></div>
+ 				<section>
+ 					<figure><img src="engBio2.png" style="width: 140px;height: 150px;margin-top: -250px;margin-bottom: 20px;">
+ 						<figcaption style="position: absolute;top:120px;left:410px;font-size: 3.4vh;color:#235789;font-family: Spectral,serif;">Chia Fang, Anna, Cheng</br> <br>
+ 						<figcaption>
+ 							"Sometimes it is the poeple who no one imagines anything of who <br> do the things that no one can imagine." ~ <em>The Imitation Game (2014)</em>
+ 						</figcaption>
+ 						</figcaption>
+ 						<img src="line1.png" style="width: 750px;margin-bottom: 20px;">
+ 					</figure>
+ 					<h1 style="background-color: rgba(0, 80, 157,.7);width: 75px;line-height: 15vh;font-size: 10vh;margin-left: -200px;margin-top:-200px;color: #03045e;font-family:Italiana, sans-serif;	font-weight: bolder;">WHO AM I</h1>
+ 					<p style="color: #235789;margin-top: -60px;font-family: Spectral,serif;">
+ 					My name is Chia Fang Cheng. Feel free to call me Anna! I was born and raised in Alian, Kaohsiung. I am determined to be a phonetician with a focus on experimental phonetics and cross-language speech perception. I’ve been studied in University of California for one year, and currently a second-year master student at Linguistic Institute in National Tsing Hua University.
+					
+					I have received continuous trainings in running phonetic experiments (e.g. EMA and ultrasound studies) in the PhonLab in NTHU. Simultaneously, I also took courses regarding statistics and participated in study groups about programming. Interdisciplinary learning widens my future career path in linguistic studies.
+					
+					Beyond academics, prose writing is part of my hobbies. Most of the time, I take up my pen to depict the moving moments in my life, and share the stories by submitting my prose pieces to newspapers. Writing makes my life peaceful and develops my spiritual gifts. 
+					
+					In the future, I will keep on writing and following my passion in linguistics. Even though I still require more training and experiences in this subject field, my passion in phonetic research will always guide me to my ultimate goal.
+					</p>
+				</section>
+ 		</div>
+ 		
+ 		<div class="lightbox" id="chiBio">
+ 			<section>
+ 				<a href="#AboutMe" class="close"></a>
+ 				<div style="width: 100vw; height:52px ; background-color: grey; position: fixed;top: 0;left:0;z-index: -1;"></div>
+ 				<h1 style="padding-top: 80px;padding-left:380px;width:100px; height:50px;font-size: 10vh;line-height:15vh;color: #03045e;">我 是 誰</h1><!--background-color: red;-->
+ 				<p style="position:relative;left:450px;top: 65px;width: 330px;height: 400px;color: #00296b;">
+ 					我是鄭佳方，目前就讀於清華大學語言所。語言學於我而言猶如魚之於水，早已密不可分。大學時期，我初次在課堂上接觸此領域，並在學習過程中不斷發展出興趣。這份熱忱使我下定決心成為一位語言學家，並以語音學為重心持續探索。
+ 					<br><br>為了增進自己的學術能力，我加入了語音實驗室，並在教授的指導下進行多項構音實驗的操作和分析。同時，因為分析需求，我也進修了統計課及程式設計，希望可以應用所學，在語言學研究上紮實前進。
+					<br><br>學習之餘，我也不忘寫作。將情感轉換為文字吐露，昇華思緒的靈動。這份感動至今一直陪伴著我，讓我在疲累之餘得以繼續堅持。希望未來我可以繼續在寫作和語言學的陪伴下不斷提升自己，自信前行。
+				</p>
+				<figure>
+					<img src="chiBio1.png" style="position: absolute;left:105px;top:60px;width:396px; height:450px;z-index: -2;">
+					<img src="chiBio1_overlay.png" style="position: absolute;left:200px;top:123px;width:350px; height: 420px;z-index: -3;">
+				</figure>
+ 			</section>
+ 		</div>
+
+<!--分隔線 以上是lightbox-->
+	
+                                         
+   
+    <!--this is for the ContactMe section-->
+
+		
+		<div style="background-color:rgba(245, 215, 110, .7);height: 100vh;margin-top:90vh;">
+		<a name="ContactMe"></a>
+				<div class = "cardContainer" style="margin-left: 10vw;padding-top: 13vh;">
+					<div class="cover" style="background-image: url(email1.png);" ></div>
+					<div class= "back"><span style="text-decoration: underline red;">Email</span><br><span style="font-size: 2.9vh">annacheng201807@gmail.com</span></div>
+				</div>
+				<div class = "cardContainer" style="margin-left: 10vw;padding-top: 15vh;">
+					<div class="cover" style="background-image: url(phone1.png);background-size: 170px 170px;"></div>
+					<div class= "back"><span style="text-decoration: underline red;">Phone</span><br>03-5715131#34513</div>
+				</div>
+
+				<!--這裡的位置要重新定義 應當以上面的divs作為基準 這樣視窗移動時才不會偏移-->
+				<div class = "cardContainer" style="margin-left: 29vw;margin-top: -66.6vh;">
+					<div class="cover"style="background-image: url(fb.png);background-size: 150px 150px;" ></div>
+					<div class= "back"><span style="text-decoration: underline red;">FB</span><br>Anna Zheng/鄭佳方</div>
+				</div>
+				<div class = "cardContainer" style="margin-left: 29vw;margin-top: 1.9vh;margin-bottom: 50px;">
+					<div class="cover" style="background-image: url(linkedin.png);"></div>
+					<div class= "back"><span style="text-decoration: underline red;">LinkedIn</span><br>Anna Cheng</div>
+				</div>
+				<div style="margin-top:-80vh;text-align: right;font-size:130px;line-height: 30vh;padding-right: 12vw;font-weight: bold;color: #7d6e38;font-family: Poiret One, sans-serif;font-weight: bolder;">Contact <br>Me</div>
+				<div style="margin-top:17vh;"></div> <!--用來控制footer位置-->
+				<footer>POWERED BY: ANNA CHENG<br>FALL 2020 Bilingual Web Design</footer>
+				<!--<h1 style="text-align: right;line-height: 50vh;font-size:120px;padding-right: 210px;">Contact <br>Me</h1>-->
+
+				
+
+
+
+
+				<!--<div class = "cardContainer" style="left: 100px;top:222vh;">
+					<div class="cover" >cover</div>
+					<div class= "back">back</div>
+				</div>
+				<div class = "cardContainer" style="left: 100px;top: 265vh;">
+					<div class="cover" >cover</div>
+					<div class= "back">back</div>
+				</div>
+				<div class = "cardContainer" style="left: 350px;top:222vh;">
+					<div class="cover" >cover</div>
+					<div class= "back">back</div>
+				</div>
+				<div class = "cardContainer" style="left: 350px;top: 265vh;">
+					<div class="cover" >cover</div>
+					<div class= "back">back</div>
+				</div>-->
+			
+		</div>
+
+	</body>											
+
+
+</html>

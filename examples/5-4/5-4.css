@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	background-color: #ca3d3f;
+}
+
+article{
+	display: flex; /*可以被section繼承 還是block element 但是在flexbox內去做排版*/
+	height: 100%;
+	flex-direction: column;/*要用欄還是列做排版*/
+	flex-wrap: wrap; /*nowrap 指的是不會換行 原本設定的寬度即使不夠 也會硬塞在同一行; wrap會自動分配空間*/
+	justify-content: space-evenly;/*每行之內的物件要如何排版 flex-start: 從每行的起始點去做對齊; flex-end:右邊對齊; center; space-between; space-around:每個box之間的寬度的一半是兩側的寬度; space-evenly:間隔相同 兩側也會有間隔*/
+	align-content: space-around;/*每一行之間的排版 flex-start:貼緊上緣; flex-end:貼緊下緣*/
+}
+
+article > section {
+	padding:5px;
+	background-color: #386641;
+	color: white;
+	font-size: 2.4vh;
+	width: 30%;
+	height: 8%;
+}
+
+@media only screen and (min-width: 1200px) {
+	article{
+		flex-direction: row;
+	}
+}

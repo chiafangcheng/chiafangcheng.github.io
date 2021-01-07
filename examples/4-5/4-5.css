@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav{
+	width: 100vw;
+	height: 30px;
+	background-color: #ccc;
+	font-family: sans-serif;
+	padding: 0 10px;
+	
+
+}
+
+nav > div{
+	display: inline-block;
+	margin: 0 5px;
+	height: 30px;
+	padding: 0 3px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: text-top;
+}
+
+nav > div:hover {
+	cursor: pointer;
+	background-color: white;
+	color: red;
+
+}
+
+nav>div>div{
+	margin: 0 -3px;/*讓block可以往外擴展*/
+	background-color: white;
+	color: red;
+	border: solid 1px red;
+	display: none;
+}/*背景顏色 和 block這個特性不會被繼承*/
+/*這個item的寬度會內縮是因為上一層有設定padding左右3px 因此他的block大小也會內縮*/
+
+
+/*pure hover effect*/
+/*
+nav > div:hover > div{
+	display: block;
+}
+*/

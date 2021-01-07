@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	background-color: #ca3d3f;
+}
+
+article{
+	display: flex; /*可以被section繼承 還是block element 但是在flexbox內去做排版*/
+	height: 100%;
+	flex-direction: column;/*要用欄還是列做排版*/
+	flex-wrap: wrap; /*nowrap 指的是不會換行 原本設定的寬度即使不夠 也會硬塞在同一行; wrap會自動分配空間*/
+}
+
+article > section {
+	padding:5px;
+	background-color: #386641;
+	color: white;
+	font-size: 2.4vh;
+	/*flex-grow: 1 = 該行剩下的空間 會均分到該行的box 因此會變大 來佔滿整行的空間*/
+	margin: 0 5px;
+}
+
+article > section:nth-of-type(odd){
+	flex-grow: 1;
+}
+
+article > section:nth-of-type(even){
+	flex-grow: 2; /*分給的空間是設定程flex-grow為1的兩倍*/
+}
+
+@media only screen and (min-width: 1200px) {
+	article{
+		flex-direction: row;
+	}
+}
