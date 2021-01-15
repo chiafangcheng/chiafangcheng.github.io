@@ -21,7 +21,7 @@ body{
 	position: absolute;
 	top: 23vh;
 	margin-left: calc((100vw - 184px)/2);
-	animation: fadeIn 4s ease-in-out;
+	animation: fadeIn 3s ease-in-out;
 }
 
 @keyframes fadeIn {
