@@ -15,6 +15,27 @@ body{
 }
 */
 
+#loadFadeIn{
+	width: 184px;
+	height: 184px; 
+	position: absolute;
+	top: 23vh;
+	margin-left: calc((100vw - 184px)/2);
+	animation: fadeIn 4s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from{
+		opacity :0;
+		top: 50px;
+	}
+	to{
+		opacity: 1;
+		top: 23vh;
+	}
+}
+
+
 
 .wrap > div{
 	background-image: url(back9.jpg);
@@ -183,6 +204,7 @@ h1{
 	height: 410px;
 	position: absolute;
 	right: 0;
+	top:297.35vh;/*做了html位置上的變動 故添加 但也無法讓圖片和section連動??*/
 	
 }
 
@@ -268,6 +290,8 @@ th img:hover {
 
 
  .hidme {
+ 	position: relative;
+ 	top: 40px;
  	opacity: 0;
  }
 

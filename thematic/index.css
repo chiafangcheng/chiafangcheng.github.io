@@ -8,65 +8,96 @@
 	box-sizing: border-box;
 	
 }
+body{
+	overflow-y: hidden;
 
-
-ul {
-	height: 45px;
+}
+nav{
+	height: 50px;
 	display: flex;
-	justify-content: space-between;
-	line-height: 47px;
-	overflow: hidden;
-
-	
-}
-
-li{
-	overflow: hidden;
+	font-family:Bebas Neue, sans-serif;
 	font-size: 3vh;
-	font-family: Bebas Neue, sans-serif;
-	background-color: white; 
-	padding: 0 100px;
-	transition: background-color .4s ease-in-out;
-	cursor: pointer;
+
+}
+ul.navigation li{
+	position: relative;
+	float: left;
+	list-style: none;
+	width: 20vw;
+	text-align: center;
+}
+ul.navigation li a {
+	display: block;
+	padding:13px 20px;
+	background-color: white;
+	text-decoration: none;
 }
 
-li:hover {
+ul.navigation li a:hover {
 	background-color: rgba(179, 168, 168, .7);
 }
 
-a{
-	text-decoration: none;
-	overflow: hidden;
-	color: #3e1fa3;
-}
-
-a:active {
-	color: red;
-}
-
-
-
-
-ul.dropdown-content{
+ul.navigation li ul{
+	display: none;
+	float: left;
 	position: absolute;
-	right:155px ;
-	top:45px;
+
+}
+ul.navigation li:hover >ul{
+	display: block;
+}
+
+.banner{
+	width: 100%;
+	height: calc(100vh - 45px); /*calc()可以計算整個高度減掉nav的高度*/
+	background: linear-gradient(90deg,#f78888 55%, transparent 45% ) center center/100% 100%, url("bg.jpg") right center / auto 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container{
+	height: 100%;
+	margin: auto;
+
+}
+.banner-txt {
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-	z-index: 99;
-	height: 150px;
-
-}
-
-ul.dropdown-content{
-	display: none;
-}
-
-li.dropdown-menu:hover >ul.dropdown-content{
-	display: block;
+	justify-content: center;
+	padding-left: 50px;
+	width: 50%;
+	font-family: Thasadith, sans-serif;
 	
 }
 
+.banner-txt img{
+	border-bottom: 3px solid #25285c;
+	width: 45vw;
+	height: 15vh;
+	padding-bottom: .3rem;
+	margin-bottom: .3rem;
+}
+
+
+.banner-txt small{
+	display: block;
+	font-size: 40px;
+	font-weight: 700;
+
+}
+
+.banner-txt h2{
+	font-size: 30px;
+	padding-top: 20px;
+}
+
+.banner-txt p{
+	font-size: 20px;
+}
+
+
+
+@media only screen and (min-width: 1200px){
 
 .banner{
 	width: 100%;
@@ -98,6 +129,7 @@ li.dropdown-menu:hover >ul.dropdown-content{
 	height: 115px;
 	padding-bottom: .3rem;
 	margin-bottom: .3rem;
+	margin-top: 0;
 }
 
 
@@ -116,6 +148,9 @@ li.dropdown-menu:hover >ul.dropdown-content{
 .banner-txt p{
 	font-size: 20px;
 }
+
+}
+
 
 
 

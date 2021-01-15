@@ -1,0 +1,23 @@
+div{
+	position: absolute; /*建立內層div的參考點*/
+	height: 100px;
+	width: 100px;
+	background-color: red;
+}
+
+div > div {
+	position: relative;
+	z-index: -1;
+	left:0;
+	width: 100px;
+	background-color: orange;
+	opacity: 0;
+}
+
+div:hover > div{
+	opacity: 1;
+	left:100% ;
+	transition: left 0.5s ease-out, opacity 1s ease-out;
+}
+
+/*可以用這個做Thematic website的menu*/

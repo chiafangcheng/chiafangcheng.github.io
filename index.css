@@ -15,6 +15,25 @@ body{
 }
 */
 
+#loadFadeIn{
+	width: 184px;
+	height: 184px; 
+	position: absolute;
+	top: 23vh;
+	margin-left: calc((100vw - 184px)/2);
+	animation: fadeIn 4s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from{
+		opacity :0;
+		top: 50px;
+	}
+	to{
+		opacity: 1;
+		top: 23vh;
+	}
+}
 
 .wrap > div{
 	background-image: url(back9.jpg);
@@ -100,8 +119,6 @@ div#container{
 	margin-left: calc((100vw - 8vw)/2);
 	margin-top:5vh ;
 	font-size: 3vh;
-	line-height: 45px;
-	padding-left: 7px;
 }
 
 
@@ -112,9 +129,11 @@ div#container{
 
 .btn > a{
 	text-decoration: none;
-	font-family: Poiret One;
+	font-family: Poiret One, sans-serif;
 	font-weight: normal;
 	color: white;
+	padding-left:7.5px;
+	line-height: 45px;
 }
 
 .btn:hover > a{
@@ -158,6 +177,8 @@ h1{
 .thirdPage {
 	background-color: rgb(255, 231, 148)/*rgba(245, 215, 110, .7)*/;
 	overflow-x: hidden;
+	display: flex;
+	width: 100%;
 	
 }
 
@@ -168,11 +189,11 @@ h1{
 }
 
 .thirdPage section{
-	display: flex;
 	padding-left: 5vw;
 	padding-bottom: 50px;
 	padding-right: 55vw;
 	text-align: justify;
+	justify-content: space-between;
 	width: 100vw;
 	height: 50vh;
 	font-size: 2.7vh;
@@ -180,10 +201,10 @@ h1{
 
 .thirdPage figure > img{
 	width: 600px;
-	height: 410px;
+	height: 409.5px;
 	position: absolute;
 	right: 0;
-	
+	top:292vh;
 }
 
 .btn2 {
@@ -193,7 +214,6 @@ h1{
 	margin-left: 48vw;
 	background-color: rgb(255, 231, 148);
 	border-color: rgb(255, 231, 148);
-	color:#918353;
 	border-radius: 3rem;
 	width:100px; 
 	height:50px;
@@ -269,6 +289,8 @@ th img:hover {
 
  .hidme {
  	opacity: 0;
+ 	position: relative;
+ 	top: 40px;
  }
 
  .hidmeWords{

@@ -15,72 +15,44 @@ body{
 	
 	/*background-color: #f0dddf;*/
 	background:rgba(255, 150, 150,.3);
+	overflow-y: hidden;
 }
-
 
 nav{
-	background-color: white; /*flex-gap的問題尚未解決 但我還沒查到作法 故先設白色*/
-}
-
-
-
-ul {
-	
-	height: 45px;
+	height: 50px;
 	display: flex;
-	justify-content:space-between;
-	line-height: 47px;
-	overflow: hidden;
-		
-}
-
-
-
-li{
-
-	overflow: hidden;
+	background-color: white;
+	font-family:Bebas Neue, sans-serif;
 	font-size: 3vh;
-	font-family: Bebas Neue, sans-serif;
-	background-color: white; 
-	padding: 0 100px;
-	transition: background-color .4s ease-in-out;
-	cursor: pointer;
 
 }
+ul.navigation li{
+	position: relative;
+	float: left;
+	list-style: none;
+	width: 20vw;
+	text-align: center;
+	z-index: 10;
+}
+ul.navigation li a {
+	display: block;
+	padding:13px 20px;
+	background-color: white;
+	text-decoration: none;
+}
 
-li:hover {
+ul.navigation li a:hover {
 	background-color: rgba(179, 168, 168, .7);
 }
 
-a{
-	text-decoration: none;
-	overflow: hidden;
-	color:#3e1fa3;
-}
-
-a:active {
-	color: red;
-}
-
-
-ul.dropdown-content{
-	position: absolute;
-	right:155px ;
-	top:45px;
-	display: flex;
-	flex-direction: column;
-	z-index: 99;
-	height: 140px;
-
-}
-
-ul.dropdown-content{
+ul.navigation li ul{
 	display: none;
-}
+	float: left;
+	position: absolute;
 
-li.dropdown-menu:hover >ul.dropdown-content{
+}
+ul.navigation li:hover >ul{
 	display: block;
-	
 }
 
 
@@ -142,7 +114,7 @@ p > a{
 
 .overlay{
 	width:705px;
-	height:480px ;
+	height:515px ;
 	position: absolute;
 	right: 5px;
 	top: 5px;

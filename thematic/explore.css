@@ -10,64 +10,46 @@
 }
 
 
-ul {
-	height: 45px;
+nav{
+	height: 50px;
+	background-color: white;
 	display: flex;
-	justify-content: space-between;
-	line-height: 47px;
-	overflow: hidden;
-
-	
-}
-
-li{
-	overflow: hidden;
+	font-family:Bebas Neue, sans-serif;
 	font-size: 3vh;
-	font-family: Bebas Neue, sans-serif;
-	background-color: white; 
-	padding: 0 100px;
-	transition: background-color .4s ease-in-out;
-	cursor: pointer;
+
+}
+ul.navigation li{
+	position: relative;
+	float: left;
+	list-style: none;
+	width: calc((100vw - 19px)/5);
+	text-align: center;
+	z-index: 10;
+}
+ul.navigation li a {
+	display: block;
+	padding:13px 20px;
+	background-color: white;
+	text-decoration: none;
 }
 
-li:hover {
+ul.navigation li a:hover {
 	background-color: rgba(179, 168, 168, .7);
 }
 
-a{
-	text-decoration: none;
-	overflow: hidden;
-	color: #3e1fa3;
-}
-
-a:active {
-	color: red;
-}
-
-
-
-ul.dropdown-content{
-	position: absolute;
-	right:150px ;
-	top:45px;
-	display: flex;
-	flex-direction: column;
-	z-index: 99;
-	height: 150px;
-
-}
-
-ul.dropdown-content{
+ul.navigation li ul{
 	display: none;
-}
+	float: left;
+	position: absolute;
 
-li.dropdown-menu:hover >ul.dropdown-content{
+}
+ul.navigation li:hover >ul{
 	display: block;
-	
 }
 
 body{
 	background-image: linear-gradient(125deg, #f53636,#f78888, #f7c1c1);
+
 }
 
 

@@ -1,0 +1,24 @@
+div{
+	position: absolute; /*建立內層div的參考點*/
+	height: 100px;
+	width: 100px;
+	background-color: red;
+}
+
+div > div {
+	position: relative;
+	left: 100%; /*右移自己100%的寬度*/
+	background-color: orange;
+	/*opacity: 0;*/
+	width: 0;
+	white-space: nowrap; /*指的是有空白 文字就會換行wrap;*/
+	overflow: hidden; /*把超出寬度的文字隱藏*/
+}
+
+div:hover > div{
+	/*opacity: 1;*/
+	width: 100px;
+	transition: all 0.5s ease-out;
+}
+
+/*可以用這個做Thematic website的menu*/

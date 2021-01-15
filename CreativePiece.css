@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&family=Rasa&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family:Rasa;
+	overflow-x: hidden;
+}
+
+
+.wrap{
+	width: 100vw;
+	height: calc(550vh + 15vh);
+	background-color: rgb(255, 231, 148);
+}
+
+
+.content {
+	background-color: white;
+	box-shadow: #ddd;
+	width: 79vw;
+	position: absolute;
+	left: 10vw;
+	top: 15vh;
+	padding: 50px 50px;
+}
+
+p{
+	margin: 20px 0;
+}
+
+a#goBack{
+	text-decoration: none;
+	display: inline-block;
+	padding: 16px 20px;
+	background-color: #f1f1f1;
+	border-radius: 50%;
+	font-weight: 500;
+	font-size: 30px;
+	margin: 20px 20px;
+	z-index: 2;
+
+}
+
+a#goBack:hover {
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+a#goTop {
+	text-decoration: none;
+	display: inline-block;
+	width:75px ;
+	height:75px;
+	border-radius: 0;
+	position: absolute;
+	bottom: -446.5vh;
+	left: 91vw;
+	background-color: #f1f1f1;
+	padding-right: 5px;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+a#goTop:hover {
+	background-color: #6d96ed;
+	color: white;
+	transition: background-color .3s ease-in-out;
+}

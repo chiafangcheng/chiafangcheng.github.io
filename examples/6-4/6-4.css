@@ -1,0 +1,19 @@
+div {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	animation: bgChange 1s ease-in infinite alternate; /*套用動畫名稱 ;duration ;transition-effect; 動畫跑幾個循環(可以是數字); alternate是指可以來回 而不會又回到原本*/
+}
+
+
+/*@keyframes 後面可以加自訂一的function名稱*/
+@keyframes bgChange {
+	from {
+		background-color: red;
+	}
+	to {
+		background-color: orange;
+	}
+}
+
+/*load in effect 可以用這個達成*/
